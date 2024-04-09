@@ -79,22 +79,6 @@
 
         }
 
-        function checaControles(tecla){
-            if(tecla == 38){
-                console.log('Cima');
-            }
-            if(tecla == 40){
-                console.log('Baixo');
-            }
-            if(tecla == 37){
-                console.log('Esquerda');
-            }
-            if(tecla == 39){
-                console.log('Direita');
-            }
-        }
-
-
         function nova_partida() {
             inicializa_variaveis();
             preenche_tabuleiro();
@@ -170,6 +154,25 @@
                 document.getElementById("resultado").innerHTML = "<strong>Dificuldade";
 
         }
+        function checaControles(tecla) {
+            if (tecla == 37) {
+                console.log("teclou para esquerda ");
+            }
+            if (tecla == 38) {
+                console.log("teclou para cima");
+            }
+            if (tecla == 39) {
+                console.log( "mova o 8");
+            }
+            if (tecla == 40) {
+                console.log( "mova o 6");
+            }
+        }
+
+       function checaTabuleiro (){
+        if(tabuleiro !== 'number') return alert('ERROR')
+        if(tabuleiro >= 8) return alert('ERROR')
+       }
 
     </script>
 </body>
